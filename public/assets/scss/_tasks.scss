@@ -1,0 +1,85 @@
+/* ======= task-card ======*/
+
+
+.task-card{
+	position: relative;
+	background: rgba(255,255,255,1);
+	box-shadow: 0 1px 2px 1px rgba(0,0,0,0.2);
+	border-radius: 2px;
+	padding: 1em 1em 0.5em 1em;
+	margin-bottom: 0.8em;
+	transition: all 0.3s;
+	&:hover{
+		cursor: pointer;
+		// background: rgba(44, 62, 80,1.0);
+		background: rgba(250,250,250,0.1);
+		.task-name{
+			// font-weight: bold;
+			// color: #fff;
+		}
+		.glyphicon{
+			// color: #fff;
+			color: #666;
+		}
+	}
+	.task-name{
+		padding-bottom: 24px;
+		margin-bottom: 0;
+		transition: all 0.2s;
+		letter-spacing: 1px;
+	}
+	.edit{
+		margin-bottom: 18px;
+		letter-spacing: 1px;
+	}
+
+	.task-icons{
+		span{
+			color: #888;
+		}
+		.glyphicon{
+			transition: all 0.2s;
+		}
+
+		.right:hover .glyphicon,
+		.left:hover .glyphicon{
+			color: #2980b9;
+		}
+		.destroy:hover .glyphicon{
+			color: #c0392b;
+		}
+		.pencil:hover .glyphicon{
+			color: #8e44ad;
+		}
+		.comment-button:hover .glyphicon{
+			color: #27ae60;
+		}
+	}
+	
+	.task-icons>span{
+		padding-right: 0.8em;
+	}
+	.task-description{
+		min-height: 60px;
+	}
+	
+	.right,
+	.left{
+		display: none;
+	}
+	.visible,
+	.visible{
+		display: inline;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

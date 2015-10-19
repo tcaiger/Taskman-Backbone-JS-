@@ -1,0 +1,69 @@
+
+/* ===== General Styles =====*/
+
+// === For the inset ScrollBar =====
+
+html {
+    overflow: auto;
+    background-color: transparent;
+}
+body {
+    position: absolute;
+    padding-top: 50px;
+    top: 0px;
+    left: 0px;
+    bottom: 30px;
+    right: 0px;
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul li{
+	list-style: none;
+}
+.title{
+	margin-left: 0.5em;
+}
+p{
+	color: #444;
+}
+
+/* ======= Form ======*/
+
+form{
+	max-width: 200px;
+	margin: 2em auto;
+}
+label.error,
+p.error{
+	font-weight: bold;
+	color: tomato;
+}
+
+
+
+/* ======= list & task editing & deleting======*/
+
+input.edit,
+textarea.description-edit{
+	display: none;
+}
+
+
+/* makes the p dissapear*/
+.editing p{
+	display: none;
+}
+/*makes the input appear*/
+.editing input.edit,
+.editing textarea.description-edit{
+	display: inline;
+}
+
+
+
+
+
+

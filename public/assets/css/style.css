@@ -1,0 +1,227 @@
+/* ==== Flexbox =======*/
+.flex {
+  display: flex; }
+
+.flex-row {
+  flex-direction: row; }
+
+.flex-column {
+  flex-direction: column; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.flex-j-start {
+  justify-content: flex-start; }
+
+.flex-j-end {
+  justify-content: flex-end; }
+
+.flex-j-center {
+  justify-content: center; }
+
+.flex-j-between {
+  justify-content: space-between; }
+
+.flex-a-start {
+  align-items: flex-start; }
+
+.flex-a-end {
+  align-items: flex-end; }
+
+.flex-a-center {
+  align-items: center; }
+
+.flex-a-stretch {
+  align-items: stretch; }
+
+.flex-1 {
+  flex: 1; }
+
+.flex-2 {
+  flex: 2; }
+
+.flex-3 {
+  flex: 3; }
+
+.flex-4 {
+  flex: 4; }
+
+/* ===== General Styles =====*/
+html {
+  overflow: auto;
+  background-color: transparent; }
+
+body {
+  position: absolute;
+  padding-top: 50px;
+  top: 0px;
+  left: 0px;
+  bottom: 30px;
+  right: 0px;
+  overflow-y: auto;
+  overflow-x: auto;
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased; }
+
+ul li {
+  list-style: none; }
+
+.title {
+  margin-left: 0.5em; }
+
+p {
+  color: #444; }
+
+/* ======= Form ======*/
+form {
+  max-width: 200px;
+  margin: 2em auto; }
+
+label.error,
+p.error {
+  font-weight: bold;
+  color: tomato; }
+
+/* ======= list & task editing & deleting======*/
+input.edit,
+textarea.description-edit {
+  display: none; }
+
+/* makes the p dissapear*/
+.editing p {
+  display: none; }
+
+/*makes the input appear*/
+.editing input.edit,
+.editing textarea.description-edit {
+  display: inline; }
+
+/* ======= Scroll Bar ======*/
+::-webkit-scrollbar {
+  height: 15px; }
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  width: 20px;
+  display: block;
+  background-color: transparent; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  border-radius: 8px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  border-radius: 6px;
+  background: #ccc;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6); }
+
+/* ======= list ======*/
+.list {
+  position: relative;
+  min-width: 260px;
+  margin: 1em; }
+  .list:hover .destroyList {
+    color: #999; }
+  .list .list-name {
+    font-weight: bold;
+    letter-spacing: 1px; }
+    .list .list-name:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+  .list button {
+    margin-top: 0.5em; }
+  .list .destroyList {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: transparent;
+    transition: all 0.5s; }
+    .list .destroyList:hover {
+      cursor: pointer; }
+
+/* Put the 'add list' button at the right of the page */
+.last {
+  order: 99; }
+
+input.list-edit {
+  display: none; }
+
+.list-edit {
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+  font-weight: bold; }
+
+.list-editing input.list-edit + p {
+  display: none; }
+
+.list-editing input.list-edit {
+  display: inline; }
+
+/* ======= task-card ======*/
+.task-card {
+  position: relative;
+  background: white;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  padding: 1em 1em 0.5em 1em;
+  margin-bottom: 0.8em;
+  transition: all 0.3s; }
+  .task-card:hover {
+    cursor: pointer;
+    background: rgba(250, 250, 250, 0.1); }
+    .task-card:hover .glyphicon {
+      color: #666; }
+  .task-card .task-name {
+    padding-bottom: 24px;
+    margin-bottom: 0;
+    transition: all 0.2s;
+    letter-spacing: 1px; }
+  .task-card .edit {
+    margin-bottom: 18px;
+    letter-spacing: 1px; }
+  .task-card .task-icons span {
+    color: #888; }
+  .task-card .task-icons .glyphicon {
+    transition: all 0.2s; }
+  .task-card .task-icons .right:hover .glyphicon,
+  .task-card .task-icons .left:hover .glyphicon {
+    color: #2980b9; }
+  .task-card .task-icons .destroy:hover .glyphicon {
+    color: #c0392b; }
+  .task-card .task-icons .pencil:hover .glyphicon {
+    color: #8e44ad; }
+  .task-card .task-icons .comment-button:hover .glyphicon {
+    color: #27ae60; }
+  .task-card .task-icons > span {
+    padding-right: 0.8em; }
+  .task-card .task-description {
+    min-height: 60px; }
+  .task-card .right,
+  .task-card .left {
+    display: none; }
+  .task-card .visible,
+  .task-card .visible {
+    display: inline; }
+
+/* ======= Comments ======*/
+.comment {
+  padding-bottom: 1em; }
+  .comment .time {
+    color: #999; }
+  .comment .comment-img {
+    margin-right: 1em;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 3px; }
+    .comment .comment-img img {
+      width: 70px;
+      height: auto;
+      margin-left: -7px;
+      margin-top: -5px; }
+
+/*# sourceMappingURL=style.css.map */

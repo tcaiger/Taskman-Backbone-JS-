@@ -1,0 +1,61 @@
+/* ======= list ======*/
+
+.list{
+	position: relative;
+	min-width: 260px;
+	margin: 1em;
+	&:hover .destroyList{
+		color: #999;
+	}
+
+	.list-name{
+		font-weight: bold;
+		letter-spacing: 1px;
+		&:hover{
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+	button{
+		margin-top: 0.5em;
+	}
+	.destroyList{
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		color: transparent;
+		transition: all 0.5s;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+
+/* Put the 'add list' button at the right of the page */
+.last{
+	order: 99;
+}
+
+input.list-edit{
+	display: none;
+}
+.list-edit{
+	margin-bottom: 4px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+.list-editing input.list-edit+p{
+	display: none;
+}
+
+.list-editing input.list-edit{
+	display: inline;
+}
+
+
+
+
+
+
+
+

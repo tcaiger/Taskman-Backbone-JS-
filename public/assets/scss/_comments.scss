@@ -1,0 +1,29 @@
+/* ======= Comments ======*/
+
+.comment{
+	padding-bottom: 1em;
+
+	.time{
+		color: #999;
+	}
+
+	.comment-img{
+		margin-right: 1em;
+		width: 60px;
+		height: 60px;
+		overflow: hidden;
+		border-radius: 3px;
+
+		img{
+			width: 70px;
+			height: auto;
+			margin-left: -7px;
+			margin-top: -5px;
+		}
+	}
+}
+
+
+
+
+
